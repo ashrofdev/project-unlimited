@@ -1,0 +1,65 @@
+.signin-container{
+    margin: 30px 50px;
+    display: grid;
+    place-content: center;
+     
+    .img-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .fspimage{
+            width: 6em;
+        }
+
+    }
+
+    .input-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 50vh;
+        width: 25vw;
+        padding: 0px 30px;
+        color: grey;
+        box-shadow: -1px 2px 1px 3px grey;
+        font-size: 12px;
+        form{
+            display: flex;
+            flex-flow: column;
+            gap: 5px;
+            
+            input{
+                padding: 6px;
+              
+            }
+            div{
+                display: flex;
+                margin-top:30px;
+               
+                input[type="submit"]{
+                    margin-right:10px;
+                    background-color: #91DEFF;
+                    border: none;
+                    padding: 7px 15px;
+                    color: black;
+                    cursor: pointer;
+                    transition: all 200ms linear;
+                    &:hover{
+                        
+                        background-color:#3ab7ec ;
+                        color: white;
+                    }
+                }
+
+            }
+            
+            
+
+        }
+        
+       
+
+    }
+    
+
+}
