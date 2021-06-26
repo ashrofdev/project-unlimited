@@ -40,7 +40,6 @@ class Dashboard extends Component {
                                 <div onClick={this.clickHandler} id={this.state.active==="Edit"?"active":"Edit"}>Edit Progress</div>
                                 <div onClick={this.clickHandler} id={this.state.active==="Add"?"active":"Add"}>Add Client</div>
                                
-                            
                         </div>
                     </div>
                     <div className="main">

@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import fspimg from '../../resources/images/fsp.png'
+import {NavLink} from 'react-router-dom'
+
  class Signin extends Component {
     render() {
         return (
@@ -16,9 +18,9 @@ import fspimg from '../../resources/images/fsp.png'
                         <input type="text" />
                         <label htmlFor="">Password</label>
                         <input type="text" />
-                        <div>
-                            <input type="submit" value="Sign in" />
-                            <input type="submit" value="Sign up" />
+                        <div className="cta">
+                            <NavLink to="/dashboard"><button>Log in to your dashboard</button></NavLink>
+                            <p>Don't have an account? <button className="signup">SignUp</button></p>
                         </div>
                        
                     </form>
