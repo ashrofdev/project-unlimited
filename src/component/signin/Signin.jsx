@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import fspimg from '../../resources/images/fsp.png'
 import {NavLink} from 'react-router-dom'
+import PoweredBy from '../PoweredBy/PoweredBy'
 
  class Signin extends Component {
     render() {
@@ -25,8 +26,8 @@ import {NavLink} from 'react-router-dom'
                        
                     </form>
                 </div>
-
             </div>
+            <PoweredBy/>
                 
             </>
         )
