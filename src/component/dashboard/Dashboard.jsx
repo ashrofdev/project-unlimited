@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import {FaRegBell} from 'react-icons/fa'
+import {FaEdit, FaHome, FaRegBell, FaUserPlus, FaUsers} from 'react-icons/fa'
 import Addclient from './Addclient'
 import Clients from './Clients'
 import EditProgress from './EditProgress'
@@ -35,10 +35,10 @@ class Dashboard extends Component {
                         </div>
                         <div id="nav-items">
                             
-                                <div  onClick={this.clickHandler} id={this.state.active==="Home"?"active":"Home"}>Home</div>
-                                <div onClick={this.clickHandler} id={this.state.active==="Clients"?"active":"Clients"}>Clients</div>
-                                <div onClick={this.clickHandler} id={this.state.active==="Edit"?"active":"Edit"}>Edit Progress</div>
-                                <div onClick={this.clickHandler} id={this.state.active==="Add"?"active":"Add"}>Add Client</div>
+                                <div onClick={this.clickHandler} id={this.state.active==="Home"?"active":"Home"}><div className="icon"><FaHome id="icon" /></div> Home</div>
+                                <div onClick={this.clickHandler} id={this.state.active==="Clients"?"active":"Clients"}><div className="icon"><FaUsers id="icon" /></div> Clients</div>
+                                <div onClick={this.clickHandler} id={this.state.active==="Edit"?"active":"Edit"}><div className="icon"><FaEdit id="icon" /></div> Edit Progress</div>
+                                <div onClick={this.clickHandler} id={this.state.active==="Add"?"active":"Add"}><div className="icon"><FaUserPlus id="icon" /></div> Add Client</div>
                                
                         </div>
                     </div>

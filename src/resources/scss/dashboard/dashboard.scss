@@ -3,7 +3,7 @@
 }
 .container{
     display: grid;
-    grid-template-columns: 10rem 1fr minmax();
+    grid-template-columns: minmax(15rem, 16rem) 1fr minmax(10rem, 70vw);
     grid-template-rows: 7vh 93vh;
     grid-template-areas: 
 	"n h h" 
@@ -17,43 +17,55 @@
     justify-content: end;
     align-content: center;
     #bell{
-        font-size: 30px;
+        font-size: 1rem;
         margin-right:20px ;
     }
 }
+
 .nav{
-    background-color: #F4FDFF;
+    background-color: #e0e0e034;
     grid-area: n;
-    display: grid;
-    grid-template-rows: 30vh auto;
+    
     #avatar{
         justify-self: start;
-        margin: 5px 10px;
+        padding: .9rem;
+        border-bottom: 1px solid rgb(224, 224, 224);
+
         #title{
             color: grey;
             font-size: 12px;
         }
     }
+
     span{
         display: block;
     }
+
     #nav-items{
         display: grid;
         justify-content: stretch;
         align-content: stretch;
         grid-auto-rows: 50px; 
+        margin-top: 15rem;
 
         div{
+            display: flex;
+            align-items: center;
+
             cursor: pointer;
-            text-align: center;
-            padding: 20px;
-            transition: all 500ms linear;
+            padding: 1.5rem;
+            transition: all .2s linear;
+
+            &  .icon {
+                margin: 0;
+            }
+
             &:hover{
-                background-color:#8edef08c ;
+                color: orange;
             }
         }
         #active{
-            background-color:#8edef0 ;
+            color: orange;
         }
         
     } 
@@ -61,4 +73,5 @@
 .main{
     background-color: var(--backGround);
     grid-area: m;  
+    padding: 2rem;
 }

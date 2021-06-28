@@ -5,7 +5,7 @@ const PoweredBy = () => {
     return (
         <div className="powered">
             <div className="logo">
-                <img src={fspLogo} />
+                <img alt="" src={fspLogo} />
             </div>
             <p>Powered by Freedom Synergy Pro</p>
         </div>

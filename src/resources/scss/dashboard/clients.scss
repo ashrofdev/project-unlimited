@@ -1,20 +1,21 @@
 .client-container{
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows:93vh ;
-    gap: 20px;
+    grid-template-rows: 93vh ;
+    
     .client-left{
-        margin: 20px auto;
-        display: grid;
+        margin-top: 3rem;
       
     .client-items{
         min-width: 180px;
-        height: 38px;
         display: grid;
         grid-template-columns: 1fr 3fr;
-        border: 1px solid grey ;
         border-radius: 5px;
         align-content: center;
+        margin: 1rem 0;
+        padding: 1rem;
+        box-shadow: 1px 1px 5px rgba(41, 41, 41, 0.205);
+
         .dot{ 
             place-self: center;
             width: 15px;
@@ -25,7 +26,7 @@
         .dot-name{
             margin-left: 10px;
             place-self:center start;
-            font-size: 10px;
+            font-size: 1rem;
             #title{
                 color: grey;
                 font-size: 9px;
@@ -41,28 +42,28 @@
 }
     .client-right{
         margin: auto;
+        box-shadow: 1px 1px 5px rgba(41, 41, 41, 0.384);
         
         .client-right-container{ 
-            width: 35vw;
+            width: 45vw;
             height: 70vh;
-            border: 1px solid grey;
             border-radius: 5px;
-            padding: 20px ;
+            padding: 2rem ;
             
 
             .inner-right-container{
                 display: grid;
                 grid-template-columns: repeat(2,1fr);
-                gap: 20px 0px;
-                place-items: center;
-                margin: 30px;
+                grid-gap: 2rem;
+                margin: 2rem 0;
                 
                 .inner-items{
-                    border: 1px solid grey;
-                    width: 110px;
-                    height: 30px;
+                    box-shadow: 1px 1px 5px rgba(41, 41, 41, 0.384);
+                    padding: .5rem;
                     border-radius: 5px;
                     text-align: center;
+                    background-color: rgba(255, 166, 0, 0.171);
+                    color: black;
                 }
             }
             .dot-name{
