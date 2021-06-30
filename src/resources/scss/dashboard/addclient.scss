@@ -1,0 +1,74 @@
+.addclient {
+
+    &  label {
+        display: block;
+        margin: 2rem 0;
+        font-size: .8rem;
+        color: rgb(184, 184, 184);
+
+        &  input {
+            display: block;
+            padding: 1rem;
+            box-shadow: 1px 1px 5px rgb(211, 211, 211);
+            border: 1px solid white;
+            border-radius: .3rem;
+            margin: 1rem 0;
+            width: 20rem;
+            outline: none;
+            transition: all .5s;
+
+            &:hover {
+                // border: 1px solid orange;
+                transform: scale(1.01);
+                box-shadow: 1px 1px 5px rgb(192, 192, 192);
+            }
+        }
+    }
+
+    &  .phonegrid {
+        display: grid;
+        grid-template-columns: repeat(3, min-content);
+        grid-gap: .5rem;
+
+        &  p {
+            background-color: rgb(43, 38, 38);
+            color: white;
+            padding: .4rem .8rem;
+            border-radius: .5rem;
+            font-size: .7rem;
+            margin: 0;
+        }
+    }
+
+    &  .phoneadder {
+        width: 22rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &  input {
+            padding: 1rem;
+            box-shadow: 1px 1px 5px rgb(211, 211, 211);
+            border: 1px solid white;
+            border-radius: .3rem;
+            margin: 1rem 0;
+            width: 70%;
+            outline: none;
+            transition: all .5s;
+
+            &:hover {
+                // border: 1px solid orange;
+                transform: scale(1.01);
+                box-shadow: 1px 1px 5px rgb(192, 192, 192);
+            }
+        }
+        &  button {
+            padding: 1rem;
+            box-shadow: 1px 1px 5px rgb(211, 211, 211);
+            border: none;
+            border-radius: .3rem;
+            width: 30%;
+            margin-left: 1rem;
+        }
+    }
+}
