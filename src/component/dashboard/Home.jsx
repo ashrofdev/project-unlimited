@@ -21,7 +21,15 @@ import {FaEdit, FaHome, FaUserPlus, FaUsers} from 'react-icons/fa';
                     </div>
 
                 </div>
-                <div className="activity"></div>
+                <div className="activity">
+                    <h5>Monthly Activity</h5>
+                    <div className="canvas">
+                        
+                    </div>
+                </div>
+                <div className="efficiencycalculator">
+                    
+                </div>
             </div>
         )
     }
