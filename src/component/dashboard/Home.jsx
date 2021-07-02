@@ -21,6 +21,7 @@ import {FaEdit, FaHome, FaUserPlus, FaUsers} from 'react-icons/fa';
                     </div>
 
                 </div>
+                <div className="activity"></div>
             </div>
         )
     }
