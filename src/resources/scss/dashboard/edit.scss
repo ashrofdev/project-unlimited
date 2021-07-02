@@ -1,0 +1,38 @@
+.editprogress {
+
+    &  .client {
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: .5rem;
+        box-shadow: 1px 1px 5px rgb(209, 209, 209);
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(190, 170, 132, 0.082);
+        }
+
+        &  .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &  h5 {
+                margin: 0;
+                padding: 0;
+            }
+            &  p {
+                font-size: .6rem;
+            }
+        }
+
+        &  .bottom {
+            margin: 1rem 0;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+
+            &  p {
+                font-size: .8rem;
+            }
+        }
+    }
+}

@@ -12,7 +12,10 @@ const Addclient =()=> {
         if(phone !==""){
             const phoneArray = phones
 
-            phoneArray.push(phone)
+            phoneArray.push({
+                phone,
+                status: 'pending'
+            })
             setPhones(phoneArray)
             setPhone("")
         }
@@ -43,7 +46,7 @@ const Addclient =()=> {
             <div className="phonegrid">
                 {
                     phones.map(phone=> {
-                        return <p>{phone}</p>
+                        return <p>{phone.phone}</p>
                     })
                 }
             </div>
