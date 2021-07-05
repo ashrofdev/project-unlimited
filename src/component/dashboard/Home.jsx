@@ -4,7 +4,7 @@ import {FaEdit, FaHome, FaUserPlus, FaUsers} from 'react-icons/fa';
  class Home extends Component {
     render() {
         return (
-            <div>
+            <div className="home">
                 HOME
                 <div className="menu">
                     <div className="menuitem">
@@ -28,7 +28,22 @@ import {FaEdit, FaHome, FaUserPlus, FaUsers} from 'react-icons/fa';
                     </div>
                 </div>
                 <div className="efficiencycalculator">
-                    
+                    <div className="totalphone">
+                        <h6>Total Assigned Phone numbers</h6>
+                        <p className="figure">200 <span>{'phone numbers'}</span></p>
+                    </div>
+                    <div className="totalconverted">
+                        <h6>Total Converted Phone numbers</h6>
+                        <p className="figure">120 <span>{'phone numbers'}</span></p>
+                    </div>
+                    <div className="totalpending">
+                        <h6>Total Pending Phone numbers</h6>
+                        <p className="figure">65 <span>{'phone numbers'}</span></p>
+                    </div>
+                    <div className="totalrejections">
+                        <h6>Total Rejections</h6>
+                        <p className="figure">15 <span>{'phone numbers'}</span></p>
+                    </div>
                 </div>
             </div>
         )

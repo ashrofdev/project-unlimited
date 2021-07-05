@@ -1,3 +1,62 @@
 .home {
-    
+
+    &  .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: 3rem auto;
+
+        &  .menuitem {
+            padding: 2rem 4rem;
+            border-radius: 1rem;
+            box-shadow: 1px 1px 5px rgb(221, 221, 221);
+            font-size: 3rem;
+        }
+    }
+
+    &  .activity {
+        width: 90%;
+        margin: 5rem auto;
+        padding: 1rem;
+        border-radius: 1rem;
+        box-shadow: 1px 1px 5px rgb(221, 221, 221);
+
+        &  h5 {
+            padding: .5rem;
+            padding-top: 0;
+            border-bottom: 1px solid rgb(236, 236, 236);
+            margin: 0;
+        }
+
+        &  .canvas {
+            padding: 1rem 0;
+            height: 10rem;
+            // border-bottom: 1px solid rgb(236, 236, 236);
+        }
+    }
+
+    &  .efficiencycalculator {
+        width: 90%;
+        margin: auto;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &  .figure {
+            border-radius: .3rem;
+            box-shadow: 1px 1px 5px rgb(221, 221, 221);
+            padding: 1rem;
+            color: orange;
+            display: flex;
+            align-items: center;
+
+            &  span {
+                font-size: .7rem;
+                color: black;
+                margin-left: .5rem;
+            }
+        }
+    }
 }
